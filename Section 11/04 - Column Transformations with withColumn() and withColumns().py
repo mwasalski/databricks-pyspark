@@ -23,7 +23,7 @@ df = spark.read.table("population_metrics.default.countries_population")
 from pyspark.sql.functions import upper
 
 # withColumn adds single columns or replaces the existing column with the same name
-
+# withColumn -> Returns a new DataFrame by adding a column or replacing the existing column that has the same name.
 df.withColumn("country_name", upper("name")).\
   withColumn("population_density", df.population / df.area_km2).\
   select("coutry_name", "population", "area_km2","population_density").\

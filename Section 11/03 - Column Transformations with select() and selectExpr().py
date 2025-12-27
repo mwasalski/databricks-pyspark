@@ -27,6 +27,8 @@ df.select("country_id", "name", "population").display()
 from pyspark.sql.functions import col, upper
 
 # You can perform various methods and functions on the columns
+
+
 df.select(
     col("country_id"), 
     upper("name").alias("country_name"), 
