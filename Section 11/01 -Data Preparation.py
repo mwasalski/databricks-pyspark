@@ -37,7 +37,7 @@ df.write.mode("overwrite").saveAsTable("population_metrics.default.countries_pop
 
 # COMMAND ----------
 
-path = "/Volumes/population_metrics/landing/datasets/countries_dataset/csv_data/countries_population/country_regions.csv"
+path = "/Volumes/population_metrics/landing/datasets/countries_dataset/csv_data/country_regions/country_regions.csv"
 
 schema = StructType(
                 [
@@ -57,7 +57,7 @@ df.write.mode("overwrite").saveAsTable("population_metrics.default.country_regio
 
 # COMMAND ----------
 
-path = "/Volumes/population_metrics/landing/datasets/countries_dataset/csv_data/countries_population/country_sub_regions.csv"
+path = "/Volumes/population_metrics/landing/datasets/countries_dataset/csv_data/country_sub_regions/country_sub_regions.csv"
 
 schema = StructType(
                 [
